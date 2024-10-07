@@ -35,7 +35,7 @@ void vector_init_fill(Vector *this, size_t n, int value) {
 }
 
 void vector_copy(Vector *this, const Vector *other) {
-	if (this->data == NULL) {
+	if (other->data == NULL) {
 		vector_init(this);
 		return;
 	}
